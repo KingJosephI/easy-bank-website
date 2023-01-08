@@ -1,6 +1,6 @@
+import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import React from 'react';
 import './Header.scss';
 
 const Header = () => {
@@ -39,11 +39,10 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+        <Link to="#" className="header__invite-btn">
+          Requeste Invite
+        </Link>
       </nav>
-
-      <Link to="#" className="header__invite-btn">
-        Requeste Invite
-      </Link>
     </header>
   );
 };
