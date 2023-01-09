@@ -1,0 +1,38 @@
+@use '../../styles/functions' as *;
+
+.articles {
+  background-color: #f2f2f2;
+  padding: rem(88) rem(24);
+
+  &__title {
+    font-size: rem(32);
+    letter-spacing: rem(-0.57);
+    text-align: center;
+    margin-bottom: rem(31);
+    font-weight: 300;
+  }
+
+  &__list {
+    display: grid;
+    gap: rem(32);
+  }
+
+  @media (width >=rem(900)) {
+    padding-inline: rem(165);
+    padding-block: rem(98) rem(80);
+  }
+}
+
+@media (width >= rem(1024)) {
+  .articles {
+    &__title {
+      font-size: rem(40);
+      line-height: rem(64);
+      letter-spacing: rem(-0.71);
+      text-align: left;
+    }
+    &__list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
