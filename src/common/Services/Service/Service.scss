@@ -8,6 +8,12 @@
     letter-spacing: rem(-0.36);
     font-weight: 150;
   }
+
+  &__icon {
+    width: rem(72);
+    height: rem(72);
+    margin: 0 auto;
+  }
 }
 
 @media (width >= rem(700)) {
@@ -22,6 +28,10 @@
       line-height: rem(26);
       letter-spacing: rem(-0.25);
       font-weight: 200;
+    }
+
+    &__icon {
+      margin: 0;
     }
   }
 }

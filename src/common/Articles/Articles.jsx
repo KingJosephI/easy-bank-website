@@ -2,15 +2,16 @@ import React from 'react';
 import ArticleCard from './ArticleCard/ArticleCard';
 import currenciesImage from '../../images/image-currency.jpg';
 import confettiImage from '../../images/image-confetti.jpg';
-import mockupsImage from '../../images/image-mockups.png';
+// import mockupsImage from '../../images/image-mockups.png';
 import restaurantImage from '../../images/image-restaurant.jpg';
 import planeImage from '../../images/image-plane.jpg';
+import './Articles.scss';
 
 const Articles = () => {
   return (
-    <section className="">
-      <h1>Latest Articles</h1>
-      <div>
+    <section className="articles">
+      <h1 className="articles__title">Latest Articles</h1>
+      <div className="articles__list">
         <ArticleCard
           image={currenciesImage}
           author="By Claire Robinson"

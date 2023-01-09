@@ -1,0 +1,45 @@
+@use '../../../styles/functions' as *;
+
+.article-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: rem(5);
+  overflow: hidden;
+  background-color: #fff;
+
+  &__author {
+    font-size: rem(10);
+    line-height: rem(18);
+    letter-spacing: rem(-0.2);
+    color: #9597a5;
+  }
+
+  &__title {
+    font-size: rem(16);
+    line-height: rem(20);
+    letter-spacing: rem(-0.29);
+    font-weight: 300;
+    padding-block: rem(8);
+  }
+
+  &__description {
+    font-size: rem(13);
+    line-height: rem(18);
+    letter-spacing: rem(-0.2);
+  }
+  &__image {
+    height: rem(200);
+  }
+
+  &__content {
+    padding: rem(29) rem(24);
+  }
+}
+
+@media (width >= rem(1024)) {
+  .article-card {
+    &__image {
+      width: rem(255);
+      // height: rem(200);
+    }
+  }
+}
